@@ -1,0 +1,281 @@
+/* FONTS  */
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../fonts/YekanBakh-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "YekanBakh Boldt";
+    src: url("../fonts/YekanBakh-Boldt.ttf") format("woff");
+}
+@font-face {
+    font-family: "YekanBakh Bold";
+    src: url("../fonts/YekanBakh-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "YekanBakh Medium";
+    src: url("../fonts/YekanBakh-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "YekanBakh Heavy";
+    src: url("../fonts/YekanBakh-Heavy.woff") format("woff");
+}
+
+
+
+/* RESET  */
+* ,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::placeholder {
+    color: #212121;
+    font-size: 1.6rem;
+}
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* APP  */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "YekanBakh";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.todo__wrapper{
+    width: 70rem;
+    height: auto;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    border-radius: 0.6rem;
+}
+
+.todo__title{
+    font-size: 4rem;
+    word-spacing: 1rem;
+}
+
+.todo__body{
+    width: 100%;
+}
+
+.todo__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    height: 4rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.6rem;
+}
+
+.showall{
+    width: 8rem;
+    background-color: #2962FF;
+}
+
+.taskmaker{
+    width: 12rem;
+    background-color: #2E7D32;
+}
+
+
+.todo__main{
+    background-color: #0f1115;
+    margin-top: 2rem;
+    padding: 2rem ;
+    border-radius: 0.6rem;
+}
+
+.article{
+    width: 100%;
+    height: 6rem;
+    background-color: #1E2229;
+    border-radius: 0.6rem;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article:last-child{
+    margin-bottom: 0;
+}
+
+.todo__text{
+    font-size: 1.8rem;
+}
+
+.enText {
+    font-family: sans-serif;
+}
+
+.delete{
+    width: 6rem;
+    height: 3.5rem;
+    background-color: #E53935;
+    border-radius: 0.6rem;
+    padding-top: 0.4rem;
+}
+
+
+.popup{
+    position: absolute;
+    width: 40rem;
+    height: 18rem;
+    background-color: #0f1115;
+    color: #FFF;
+    z-index: 6;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in;
+}
+
+.popup__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E2229;
+    height: 4rem;
+}
+
+.popup__title{
+    font-size: 1.8rem;
+}
+
+.close-icon{
+    position: absolute;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.popup__main{
+
+}
+
+.todo__input{
+    font-family: inherit;
+    display: block;
+    width: 95%;
+    height: 4rem;
+    background-color: #1E2229;
+    color: #FFF;
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+    padding: 0 2rem;
+    margin: 2rem auto;
+    word-spacing: 0.1rem;
+}
+.todo__input::placeholder{
+    color: gray;
+}
+
+.popup__footer{
+    height: 6rem;
+    background-color: #1E2229;
+    display: flex;
+    gap: 1rem;
+    padding-left: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.option{
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.6rem;
+}
+
+.cancel{
+    background-color: #E53935;
+}
+
+.create{
+    background-color: #2E7D32;
+}
+
+.cover {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 40%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    transition: all 200ms ease-in;
+}
+
+.show--element {
+    visibility: visible;
+    opacity: 1;
+}

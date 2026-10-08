@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="icon" href="https://res.public.onecdn.static.microsoft/todo/4278219_2.133.2/favicon.ico">
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+
+    <div class="todo__wrapper">
+
+        <h2 class="todo__title">نیولایف - تودولیست</h2>
+
+        <div class="todo__body">
+
+            <div class="todo__header">
+                <button class="showall btn" type="button">
+                    <span>همه</span>
+                    <svg width="24" height="24" viewBox="0 0 20 22" fill="currentColor" class="size-5">
+                        <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+
+                <button class="taskmaker btn">
+                    <svg width="24" height="24" viewBox="0 0 20 22" fill="currentColor" class="size-5">
+                        <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
+                    </svg>
+                    <span>ایجاد تسک</span>
+                </button>
+            </div> 
+
+        </div>
+    </div>
+
+    <div class="popup">
+
+        <div class="popup__header">
+            <p class="popup__title">ایجاد تودو</p>
+            <svg class="close-icon" width="24" height="24" viewBox="0 0 20 22" fill="currentColor" class="size-5">
+                <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+            </svg>
+        </div>
+
+        <div class="popup__main">
+            <input type="text" class="todo__input" placeholder="عنوان تودو را وارد کنید..." autofocus>
+        </div>
+
+        <div class="popup__footer">
+            <button class="option cancel">انصراف</button>
+            <button class="option create">ایجاد</button>
+        </div>
+    </div>
+
+    <div class="cover"></div>
+    
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
